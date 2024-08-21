@@ -1,0 +1,15 @@
+
+th:nth-child(1), td:nth-child(1) {
+    text-align: left;
+  }
+
+  .categoria{
+    text-align: center !important;
+    background-color: #FFEBD6 !important;
+    color: #DE8C33 !important;
+  }
+
+  .form-check{
+    margin: 0.5em !important;
+    text-align: start;
+  }
