@@ -36,20 +36,7 @@ const [inStockOnly, setInStockOnly] = useState(false);
   export default function App() {
     const product = useSelector((state) => state.products)
     const dispatch = useDispatch();
-   /*  const [data, setData] = useState(null);
-
-   useEffect(() => {
-      fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
-      .then((data) => setData(data));
-    },[]);
-
-    <div>
-    <h1>Fetching data Like a PRO</h1>
-    <div className="card">
-        {data?.map((user) => (<li key={user.id}>{user.name}</li>))}
-    </div>
-</div> */
+   
 
     useEffect(() => {
         dispatch(
