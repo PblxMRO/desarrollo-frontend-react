@@ -12,7 +12,9 @@ const MainNavbar = () => {
             <div className="nav_logo">DESARROLLO FRONTEND CON REACT</div>
             <div className={`nav_items ${isOpen && "open"}`}>
                 <Link to="/">Inicio</Link>
-                <Link to="productos">Práctica 1</Link>
+                <Link to="/login">Login</Link>
+                <Link to="/default">Default</Link>
+                <Link to="/products">Práctica 1</Link>
             </div>
             <div className={`nav_toggle ${isOpen && "open"}`} onClick={ () => setIsOpen(!isOpen)} >
                 <span></span>
