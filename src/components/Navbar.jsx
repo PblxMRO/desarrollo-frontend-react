@@ -1,28 +1,29 @@
 import {useState} from 'react';
 import '../assets/styles/navbar.css';
 import { Link } from "react-router-dom";
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+import { useSelector } from "react-redux";
 
 const MainNavbar = () => {
-    const [isOpen, setIsOpen] = useState(false)
+    const form = useSelector(state => state.form);
     return(
-        <Navbar expand="lg">
-         <Container>
-            <div className="nav_logo">DESARROLLO FRONTEND CON REACT</div>
-            <div className={`nav_items ${isOpen && "open"}`}>
-                <Link to="/">Inicio</Link>
-                <Link to="/login">Login</Link>
-                <Link to="/default">Default</Link>
-                <Link to="/products">Práctica 1</Link>
-            </div>
-            <div className={`nav_toggle ${isOpen && "open"}`} onClick={ () => setIsOpen(!isOpen)} >
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            </Container>
-        </Navbar>
+        <nav>
+            <ul>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/products">Products</Link>
+                </li>
+                <li>
+                    <Link to="/login">Forms</Link>
+                </li>
+                <li>
+                    <Link to="/default">Default</Link>
+                </li>
+            </ul>
+            <div>Bienvenido {form.formData.username} : {form.formData.email}</div>
+            
+        </nav>
     )
 }
 export default MainNavbar

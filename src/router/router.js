@@ -1,11 +1,12 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Default from '../screens/Default';
 import Product from '../screens/Product';
-import Home from '../screens/Home';
+import LandingPage from '../screens/LandingPage';
 import Login from '../screens/Forms/LoginForm';
 import App from '../App'
 
-const basename = process.env.NODE_ENV === 'production' ? '/desarrollo-frontend-react' : '/';
+const basename = process.env.NODE_ENV.trim() === 'production' ? '/desarrollo-frontend-react' : '/';
+console.log(process.env.NODE_ENV.trim(), basename);
 
 const routes = createBrowserRouter([
     {
@@ -14,7 +15,7 @@ const routes = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Home />,
+                element: <LandingPage />,
             },
             {
                 path: '/login',

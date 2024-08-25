@@ -9,8 +9,16 @@ const UseForm = (initialValues) => {
             [name]: value,
         })
     }
+     const resetForm = () =>{
+        setValue({
+        username: "",
+        email: "",
+        password: ""
+      });
+ 
+    } 
 
-    return [values, handleChange];
+    return [values, handleChange, resetForm];
 }
 
 export default UseForm;

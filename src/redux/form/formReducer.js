@@ -1,11 +1,13 @@
-import { SET_FORM_DATA } from './formTypes'
+import { SET_FORM_DATA, RESET_FORM_DATA } from './formTypes'
 
 const initialState = {
     //definir todas las variables de estado (EN ESTE CASO UN OBJETO)
     formData: {
         username: '',
         email: '',
-    },
+        password:''
+     },
+      password: 'mod7ReactUSIP',
 };
 
 const formReducer = (state = initialState, action) => {
@@ -16,14 +18,18 @@ const formReducer = (state = initialState, action) => {
                 formData: {
                     ...state.formData,
                     ...action.payload,
-
                 }
             }
         }
+        case RESET_FORM_DATA:{
+                return {
+                    ...state,
+                    formData: {}
+                }
+            }
         default:
           return state;
     }
-    
 }; 
 
 export default formReducer;

@@ -36,3 +36,163 @@
     transform: rotate(360deg);
   }
 }
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.notification-success {
+  background-color: #efd6bd;
+  color: #cc8259;
+  padding: 2rem;
+  border: 1px solid #cc8259;
+  border-radius: 0.5rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+.close-btn-success {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #7e4f1a;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* styles forms*/
+
+
+
+/* styles forms*/
+
+/* styles for modals */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.notification-success {
+  background-color: #efd6bd;
+  color: #cc8259;
+  padding: 2rem;
+  border: 1px solid #cc8259;
+  border-radius: 0.5rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn-success {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #7e4f1a;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.LoginContainer { 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 150px;
+  flex-direction: column;
+ }
+
+ .container { 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 30px;
+  flex-direction: column;
+ }
+/* styles for landingPage */
+
+.LandingContainer{
+  background-color: white;
+  color: #282c34;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  
+}
+
+.LandingHeader{
+  background-color: #67AD5B;
+  color: white;
+  margin: 25px 0;
+  padding: 2em;
+}
+.LandingContent{
+ width: 70%;
+}
+.LandingSubtitle{
+  padding: 0.5rem;
+}
+
+.LandingSubtitle h4{
+  text-align: left;
+}
+
+.LandingSubtitle hr{
+  color: #67AD5B;
+  background-color: green;
+  border: solid 2px;
+  margin: 5px 0;
+}
+.LandingParagraph {
+  text-align: justify;
+  padding: 0.5rem;
+}
+.LandingFooter{
+  margin: 5px 0;
+}
+
+.LandingFooter p{
+  font-size: larger;
+  padding: 1.5rem;
+}
+
+.LandingGrid{
+  text-align: left;
+  padding: 0.5rem;
+}
+
+input::-ms-reveal, input::-ms-clear {
+        display: none;
+}
+
+.productTable{
+  width: 50%;
+  margin-top: 30px;
+}
+
+.wide{
+  width: -webkit-fill-available;
+ }
+

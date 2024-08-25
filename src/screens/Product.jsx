@@ -3,9 +3,7 @@ import FilterableProductTable  from './Product/_components/FilterableProductTabl
 const Default = () =>{
 return (
     <div className="App">
-       <header className="App-header">
-        <FilterableProductTable />
-      </header>
+       <FilterableProductTable />
     </div>
   );
 };

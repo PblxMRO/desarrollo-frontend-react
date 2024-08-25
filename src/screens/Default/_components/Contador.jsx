@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Button from 'react-bootstrap/Button';
 
 const Contador = () => {
     //variable de estado, funcion que te permite modificar la variable
@@ -44,8 +43,8 @@ const Contador = () => {
             <h4>Componente Contador</h4>
             <h5>{contador}</h5>
             <div>
-            <Button variant="light" onClick={handleContador}>Aumentar</Button>{' '}
-            <Button variant="light" onClick={handleContador2}>Disminuir</Button>
+            <button variant="light" onClick={handleContador}>Aumentar</button>{' '}
+            <button variant="light" onClick={handleContador2}>Disminuir</button>
             </div>
         </>
     );

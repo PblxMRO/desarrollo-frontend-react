@@ -1,0 +1,22 @@
+import { motion } from "framer-motion";
+
+const ModalLogout = ({ visible, message, onClose, onCloseReset }) =>{
+    if(!visible){
+        return null;
+    }
+
+    return(
+        <div className="modal-overlay">
+            <motion.div className="notification-success" initial={{opacity: 0, y: -70}} animate={{opacity: 1, y: 0}} transition={{duration: 1}} >
+            <div>
+                <p>{message}</p>
+                <button onClick={onCloseReset}>Presionar para salir</button>
+            </div>
+        <button className="close-btn-success" onClick={onClose}>X</button>
+        </motion.div>
+        </div>
+
+    );
+};
+
+export default ModalLogout;

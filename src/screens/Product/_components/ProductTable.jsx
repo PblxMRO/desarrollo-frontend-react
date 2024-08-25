@@ -1,6 +1,5 @@
 import ProductRow from "./ProductRow";
 import ProductCategoryRow from "./ProductCategoryRow";
-import Table from 'react-bootstrap/Table';
 import '../../../../src/assets/styles/product.css';
 
 const ProductTable = ({ products, filterText, inStockOnly }) => {
@@ -34,7 +33,7 @@ const ProductTable = ({ products, filterText, inStockOnly }) => {
   });
 
   return (
-    <Table striped bordered hover>
+    <table className="productTable">
       <thead>
         <tr>
           <th>Nombre</th>
@@ -42,7 +41,7 @@ const ProductTable = ({ products, filterText, inStockOnly }) => {
         </tr>
       </thead>
       <tbody>{rows}</tbody>
-    </Table>
+    </table>
   );
 
 };

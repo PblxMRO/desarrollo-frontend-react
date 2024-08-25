@@ -1,12 +1,12 @@
-import Form from 'react-bootstrap/Form';
 
 const SearchBar = ({ filterText, inStockOnly,onFilterTextChange,
   onInStockOnlyChange }) => {
     return (
-        <Form>
-          <Form.Control type="text" placeholder="Buscar"  value={filterText}  onChange={(e) => onFilterTextChange(e.target.value)} />
-          <Form.Check type="checkbox" label="Mostrar solo productos en stock" checked={inStockOnly} onChange={(e) => onInStockOnlyChange(e.target.checked)} />
-        </Form>
+        <form className="searchForm">
+          <input type="text" className="wide" placeholder="Buscar"  value={filterText}  onChange={(e) => onFilterTextChange(e.target.value)} />
+          <label>
+          <input type="checkbox" checked={inStockOnly} onChange={(e) => onInStockOnlyChange(e.target.checked)} />  Mostrar solo productos en stock</label>
+        </form>
       );
 };
 
